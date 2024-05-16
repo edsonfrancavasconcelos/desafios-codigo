@@ -7,7 +7,7 @@ public class VerificadorNumeroConta {
 
         try {
             // Leia a entrada do usuário como uma string representando o número da conta:
-            System.out.println("Digite o número da conta:");
+           
             String numeroConta = scanner.nextLine();
 
             // Chame o método verificarNumeroConta, passando o número da conta como argumento:
@@ -28,7 +28,7 @@ public class VerificadorNumeroConta {
         // Verifique se o número da conta tem exatamente 8 dígitos:
         if (numeroConta.length() != 8) {
             // Implemente uma exceção do tipo IllegalArgumentException, caso o número de conta não tenha 8 dígitos:
-            throw new IllegalArgumentException("O número de conta deve ter exatamente 8 dígitos.");
+            throw new IllegalArgumentException("Erro: Numero de conta invalido. Digite exatamente 8 digitos.");
         }
     }
 }
